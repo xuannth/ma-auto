@@ -1,0 +1,11 @@
+/Users/xuan/eclipse-workspace/ma-auto/src/test/java/asia/twentyci/pages/LoginCMSPage.java
+/Users/xuan/eclipse-workspace/ma-auto/src/test/java/asia/twentyci/steps/serenity/LoginCMSSteps.java
+/Users/xuan/eclipse-workspace/ma-auto/src/test/java/utilities/ReadCSVData.java
+/Users/xuan/eclipse-workspace/ma-auto/src/test/java/asia/twentyci/steps/serenity/ReportSteps.java
+/Users/xuan/eclipse-workspace/ma-auto/src/test/java/asia/twentyci/steps/serenity/DashboardSteps.java
+/Users/xuan/eclipse-workspace/ma-auto/src/test/java/utilities/WaitForDownloadFile.java
+/Users/xuan/eclipse-workspace/ma-auto/src/test/java/utilities/CapReport.java
+/Users/xuan/eclipse-workspace/ma-auto/src/test/java/asia/twentyci/pages/DashboardPage.java
+/Users/xuan/eclipse-workspace/ma-auto/src/test/java/utilities/ShowCSVData.java
+/Users/xuan/eclipse-workspace/ma-auto/src/test/java/asia/twentyci/features/search/WhenOpeningCMS.java
+/Users/xuan/eclipse-workspace/ma-auto/src/test/java/asia/twentyci/pages/ReportPage.java
