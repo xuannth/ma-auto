@@ -2,17 +2,17 @@ package utilities;
 
 public class CapReport {
 	
-	private int subscription;
+	private float subscription;
 	private String client;
 	private String user;
-	private int numberOrder;
-	private int totalLead;
-	private int totalCap;
-	private int missedLead;
-	private int difference;
+	private float numberOrder;
+	private float totalLead;
+	private float totalCap;
+	private float missedLead;
+	private float difference;
 	
-	public CapReport(int subscription, String client, String user, int numberOrder, int totalLead, int totalCap,
-			int missedLead, int difference) {
+	public CapReport(float subscription, String client, String user, float numberOrder, float totalLead, float totalCap,
+			float missedLead, float difference) {
 		this.subscription = subscription;
 		this.client = client;
 		this.user = user;
@@ -22,10 +22,10 @@ public class CapReport {
 		this.missedLead = missedLead;
 		this.difference = difference;
 	}
-	public int getSubscription() {
+	public float getSubscription() {
 		return subscription;
 	}
-	public void setSubscription(int subscription) {
+	public void setSubscription(float subscription) {
 		this.subscription = subscription;
 	}
 	public String getClient() {
@@ -34,34 +34,34 @@ public class CapReport {
 	public void setClient(String client) {
 		this.client = client;
 	}
-	public int getTotalLead() {
+	public float getTotalLead() {
 		return totalLead;
 	}
-	public void setTotalLead(int totalLead) {
+	public void setTotalLead(float totalLead) {
 		this.totalLead = totalLead;
 	}
-	public int getTotalCap() {
+	public float getTotalCap() {
 		return totalCap;
 	}
-	public void setTotalCap(int totalCap) {
+	public void setTotalCap(float totalCap) {
 		this.totalCap = totalCap;
 	}
-	public int getMissedLead() {
+	public float getMissedLead() {
 		return missedLead;
 	}
-	public void setMissedLead(int missedLead) {
+	public void setMissedLead(float missedLead) {
 		this.missedLead = missedLead;
 	}
-	public int getDifference() {
+	public float getDifference() {
 		return difference;
 	}
-	public void setDifference(int difference) {
+	public void setDifference(float difference) {
 		this.difference = difference;
 	}
-	public int getNumberOrder() {
+	public float getNumberOrder() {
 		return numberOrder;
 	}
-	public void setNumberOrder(int numberOrder) {
+	public void setNumberOrder(float numberOrder) {
 		this.numberOrder = numberOrder;
 	}
 	public String getUser() {

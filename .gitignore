@@ -1,0 +1,10 @@
+### Maven template
+
+target/
+
+# Eclipse project files
+
+.classpath
+.settings/*
+.project
+bin/

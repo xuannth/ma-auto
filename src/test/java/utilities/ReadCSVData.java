@@ -23,15 +23,14 @@ public class ReadCSVData {
 			
 			while ((nextRecord = csvReader.readNext()) != null) {
 				
-				int sub = Integer.parseInt(nextRecord[0]);
+				float sub = Float.valueOf(nextRecord[0]);
 				String clientName = nextRecord[1];
 				String userName = nextRecord[2];
-				int numOrder = Integer.parseInt(nextRecord[3]);
-				int leadTotal = Integer.parseInt(nextRecord[4]);
-				int capTotal = Integer.parseInt(nextRecord[5]);
-				int leadMissed = Integer.parseInt(nextRecord[6]);
-				int deff = Integer.parseInt(nextRecord[7]);
-				
+				float numOrder = Float.valueOf(nextRecord[3]);
+				float leadTotal = Float.valueOf(nextRecord[4]);
+				float capTotal = Float.valueOf(nextRecord[5]);
+				float leadMissed = Float.valueOf(nextRecord[6]);
+				float deff = Float.valueOf(nextRecord[7]);
 	
 				CapReport capReport = new CapReport(sub, clientName, userName, numOrder, leadTotal, capTotal, leadMissed, deff);
 	
