@@ -13,7 +13,7 @@ public class ReadCSVData {
 	public static List<CapReport> getAllCapReport(String file) {
 		
 		try { 
-			FileReader filereader = new FileReader(file); 
+			FileReader filereader = new FileReader(System.getProperty("user.dir") + "/" + file); 
 			  
 	        csvReader = new CSVReaderBuilder(filereader) 
                     .withSkipLines(1) 

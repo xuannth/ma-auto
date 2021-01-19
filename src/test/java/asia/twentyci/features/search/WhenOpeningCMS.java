@@ -45,15 +45,15 @@ public class WhenOpeningCMS {
 		atDashboardSteps.clickOnCollapse();
 		atDashboardSteps.clickOnReport();
 		atReportSteps.CreateReportWith(startdate1,enddate1);
-		WaitForDownloadFile.completed("C:\\Users\\ADMIN\\Downloads\\cap-report-2020-12-01-to-2020-12-31.csv");
+		WaitForDownloadFile.completed("cap-report-2020-12-01-to-2020-12-31.csv");
 		atDashboardSteps.clickOnCollapse();
 		atDashboardSteps.clickOnReport();
 		atReportSteps.CreateReportWith(startdate2,enddate2);
-		WaitForDownloadFile.completed("C:\\Users\\ADMIN\\Downloads\\cap-report-2020-10-06-to-2020-10-13.csv");
+		WaitForDownloadFile.completed("cap-report-2020-10-06-to-2020-10-13.csv");
 		atDashboardSteps.clickOnCollapse();
 		atDashboardSteps.clickOnReport();
 		atReportSteps.CreateReportWith(startdate3,enddate3);
-		WaitForDownloadFile.completed("C:\\Users\\ADMIN\\Downloads\\cap-report-2020-10-14-to-2020-10-16.csv");
+		WaitForDownloadFile.completed("cap-report-2020-10-14-to-2020-10-16.csv");
 		
 	}
 
