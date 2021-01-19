@@ -14,7 +14,7 @@ public class WaitForDownloadFile{
 		File tempFile = new File(System.getProperty("user.dir") + "/" + nameFile);
 		
 		DateTime actualDateTime = new DateTime();
-		DateTime timeout = actualDateTime.plusMinutes(15);
+		DateTime timeout = actualDateTime.plusMinutes(1);
 		
 		int current = 0;
 		
