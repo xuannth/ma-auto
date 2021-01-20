@@ -40,7 +40,6 @@ public class WhenOpeningCMS {
 		String startdate3 = "14/10/2020";
 		String enddate3 = "16/10/2020";
 
-		atLoginCMSSteps.openCMS();
 		atLoginCMSSteps.loginCMSWith(useremail, password);
 		atDashboardSteps.createTheReport();
 		atReportSteps.CreateReportWith(startdate1,enddate1);

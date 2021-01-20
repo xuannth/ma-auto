@@ -10,11 +10,6 @@ import net.thucydides.core.annotations.Step;
 public class LoginCMSSteps {
 
 	LoginCMSPage onLoginCMSPage;
-	
-	@Step
-	public void openCMS() {
-		onLoginCMSPage.open();
-	}
 
 	@Step
 	public void loginCMSWith(String user_email, String user_password) {

@@ -20,7 +20,7 @@ public class DashboardSteps {
 		}
 	}
 
-	private boolean isScreenWidth(final int width) {
+	private boolean isScreenWidth(int width) {
 
 		if (onDashboard.getDriver().manage().window().getSize().getWidth() == width)
 			return true;
