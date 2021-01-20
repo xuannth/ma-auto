@@ -12,12 +12,21 @@ public class DashboardSteps {
 	
 	@Step
 	public void createTheReport() {
-		if(java.awt.Toolkit.getDefaultToolkit().getScreenSize().width == 1024) {
+		if(isScreenWidth(1024)) {
 			onDashboard.find(BUTTON_COLLAPSE).click();
 		}
 		else {
 			onDashboard.find(REPORT_LINK).click();
 		}
+	}
+
+	private boolean isScreenWidth(final int width) {
+
+		if (onDashboard.getDriver().manage().window().getSize().getWidth() == width)
+			return true;
+		else
+			return false;
+
 	}
 	
 }
