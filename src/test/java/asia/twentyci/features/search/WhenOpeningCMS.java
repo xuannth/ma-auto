@@ -42,16 +42,13 @@ public class WhenOpeningCMS {
 
 		atLoginCMSSteps.openCMS();
 		atLoginCMSSteps.loginCMSWith(useremail, password);
-		atDashboardSteps.clickOnCollapse();
-		atDashboardSteps.clickOnReport();
+		atDashboardSteps.createTheReport();
 		atReportSteps.CreateReportWith(startdate1,enddate1);
 		WaitForDownloadFile.completed("cap-report-2020-12-01-to-2020-12-31.csv");
-		atDashboardSteps.clickOnCollapse();
-		atDashboardSteps.clickOnReport();
+		atDashboardSteps.createTheReport();
 		atReportSteps.CreateReportWith(startdate2,enddate2);
 		WaitForDownloadFile.completed("cap-report-2020-10-06-to-2020-10-13.csv");
-		atDashboardSteps.clickOnCollapse();
-		atDashboardSteps.clickOnReport();
+		atDashboardSteps.createTheReport();
 		atReportSteps.CreateReportWith(startdate3,enddate3);
 		WaitForDownloadFile.completed("cap-report-2020-10-14-to-2020-10-16.csv");
 		
