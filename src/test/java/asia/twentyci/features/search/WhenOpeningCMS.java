@@ -10,8 +10,10 @@ import asia.twentyci.steps.serenity.ReportSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
-import utilities.ReadCSVData;
 import utilities.WaitForDownloadFile;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(SerenityRunner.class)
 public class WhenOpeningCMS {
@@ -27,6 +29,8 @@ public class WhenOpeningCMS {
 	
 	@Steps 
 	ReportSteps atReportSteps;
+
+	private String actualString;
 	
 	@Test
 	public void open_cms() {
@@ -37,8 +41,6 @@ public class WhenOpeningCMS {
 		String enddate1 = "31/12/2020";
 		String startdate2 = "06/10/2020";
 		String enddate2 = "13/10/2020";
-		String startdate3 = "14/10/2020";
-		String enddate3 = "16/10/2020";
 
 		atLoginCMSSteps.loginCMSWith(useremail, password);
 		atDashboardSteps.createTheReport();
@@ -47,10 +49,5 @@ public class WhenOpeningCMS {
 		atDashboardSteps.createTheReport();
 		atReportSteps.CreateReportWith(startdate2,enddate2);
 		WaitForDownloadFile.completed("cap-report-2020-10-06-to-2020-10-13.csv");
-		atDashboardSteps.createTheReport();
-		atReportSteps.CreateReportWith(startdate3,enddate3);
-		WaitForDownloadFile.completed("cap-report-2020-10-14-to-2020-10-16.csv");
-		
 	}
-
 }
