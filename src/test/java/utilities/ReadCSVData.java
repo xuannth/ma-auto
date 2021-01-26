@@ -40,13 +40,6 @@ public class ReadCSVData {
 				
 	
 			}
-			
-			for(int i = 0; i < allCapReports.size(); i ++) {
-				if(allCapReports.get(i).getSubscription() == 2458) {
-					System.out.println(allCapReports.get(i).getMissedLead());
-				}
-			} 
-				
 			return allCapReports;
 			
 		} 
