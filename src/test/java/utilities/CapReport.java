@@ -2,30 +2,30 @@ package utilities;
 
 public class CapReport {
 	
-	private int subscription;
+	private String subscription;
 	private String client;
 	private String user;
 	private int numberOrder;
 	private int totalLead;
 	private int totalCap;
-	private int missedLead;
+	private String missedLead;
 	private int difference;
 	
-	public CapReport(int subscription, String client, String user, int numberOrder, int totalLead, int totalCap,
-			int missedLead, int difference) {
-		this.subscription = subscription;
+	public CapReport(String sub, String client, String user, int numberOrder, int totalLead, int totalCap,
+			String leadMissed, int difference) {
+		this.subscription = sub;
 		this.client = client;
 		this.user = user;
 		this.numberOrder = numberOrder;
 		this.totalLead = totalLead;
 		this.totalCap = totalCap;
-		this.missedLead = missedLead;
+		this.missedLead = leadMissed;
 		this.difference = difference;
 	}
-	public int getSubscription() {
+	public String getSubscription() {
 		return subscription;
 	}
-	public void setSubscription(int subscription) {
+	public void setSubscription(String subscription) {
 		this.subscription = subscription;
 	}
 	public String getClient() {
@@ -46,10 +46,10 @@ public class CapReport {
 	public void setTotalCap(int totalCap) {
 		this.totalCap = totalCap;
 	}
-	public int getMissedLead() {
+	public String getMissedLead() {
 		return missedLead;
 	}
-	public void setMissedLead(int missedLead) {
+	public void setMissedLead(String missedLead) {
 		this.missedLead = missedLead;
 	}
 	public int getDifference() {

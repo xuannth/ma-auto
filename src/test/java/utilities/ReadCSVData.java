@@ -25,13 +25,13 @@ public class ReadCSVData {
 			
 			while ((nextRecord = csvReader.readNext()) != null) {
 				
-				int sub = Integer.parseInt(nextRecord[0]);
+				String sub = nextRecord[0];
 				String clientName = nextRecord[1];
 				String userName = nextRecord[2];
 				int numOrder = Integer.parseInt(nextRecord[3]);
 				int leadTotal = Integer.parseInt(nextRecord[4]);
 				int capTotal = Integer.parseInt(nextRecord[5]);
-				int leadMissed = Integer.parseInt(nextRecord[6]);
+				String leadMissed = nextRecord[6];
 				int deff = Integer.parseInt(nextRecord[7]);
 	
 				CapReport capReport = new CapReport(sub, clientName, userName, numOrder, leadTotal, capTotal, leadMissed, deff);
